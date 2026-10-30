@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "server/auth.py", line 142, in verify_token
+    token_claims = jwt.decode(raw_jwt, SECRET_KEY, algorithms=["HS256"])
+  File "server/auth.py", line 88, in fetch_user_permissions
+    user_roles = database.query("SELECT role FROM permissions WHERE user_id = %s", user_id)
+TypeError: 'NoneType' object is not subscriptable
