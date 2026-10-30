@@ -3,7 +3,7 @@ title: GhostTerm: The Haunted Terminal Companion Powered by Local Gemma 2 👻
 published: true
 tags: devchallenge, hf26challenge, gemma, ai
 cover_image: https://raw.githubusercontent.com/kady-x/GhostTerm/main/assets/screenshots/haunt_autopsy.png
-canonical_url: https://dev.to/kadyx/ghostterm-the-haunted-terminal-companion-powered-by-local-gemma-2
+canonical_url: https://dev.to/kadyx/ghostterm-the-haunted-terminal-companion-powered-by-local-gemma-2-1epi
 ---
 
 *This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine](https://dev.to/challenges/hacktoberfest-week4-2026-10-26).*
