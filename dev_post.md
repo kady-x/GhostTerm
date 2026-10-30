@@ -6,7 +6,7 @@ cover_image: https://raw.githubusercontent.com/kady-x/GhostTerm/main/assets/scre
 canonical_url: https://dev.to/kadyx/ghostterm-the-haunted-terminal-companion-powered-by-local-gemma-2
 ---
 
-*This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine](https://dev.to/challenges/hacktoberfest-2026-week-4).*
+*This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine](https://dev.to/challenges/hacktoberfest-week4-2026-10-26).*
 
 ---
 
