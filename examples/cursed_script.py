@@ -8,3 +8,4 @@ time.sleep(0.5)
 
 print("[*] Attempting to partition reality by zero...")
 division_by_void = 1337 / 0
+

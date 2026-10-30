@@ -1,10 +1,12 @@
 # 👻 GhostTerm (NecroShell)
 ### *The Haunted Terminal Companion Powered by Local Gemma 2*
 
-[![Hacktoberfest 2026](https://img.shields.io/badge/Hacktoberfest-2026_DEV_Challenge_Week_4-ff5555.svg?style=for-the-badge&logo=hacktoberfest)](https://dev.to)
+[![Hacktoberfest 2026](https://img.shields.io/badge/Hacktoberfest-2026_DEV_Challenge_Week_4-ff5555.svg?style=for-the-badge&logo=hacktoberfest)](https://dev.to/challenges/hacktoberfest-2026-week-4)
 [![Gemma 2](https://img.shields.io/badge/Model-Gemma_2_(Google_DeepMind)-00f0ff.svg?style=for-the-badge&logo=google)](https://deepmind.google/technologies/gemma/)
 [![Privacy](https://img.shields.io/badge/Privacy-100%25_Local_&_Offline-50fa7b.svg?style=for-the-badge)](https://ollama.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-bd93f9.svg?style=for-the-badge)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-kady--x%2FGhostTerm-bd93f9.svg?style=for-the-badge&logo=github)](https://github.com/kady-x/GhostTerm)
+[![DEV.to](https://img.shields.io/badge/DEV.to-@kadyx-0a0a0a.svg?style=for-the-badge&logo=dev.to)](https://dev.to/kadyx)
+[![License: MIT](https://img.shields.io/badge/License-MIT-f1fa8c.svg?style=for-the-badge)](LICENSE)
 
 ```
      .-.
@@ -20,7 +22,7 @@
 
 ## 🕯 What is GhostTerm?
 
-**GhostTerm** (or *NecroShell*) is an eerie, production-ready developer CLI assistant and process wrapper built for the **Hacktoberfest DEV Challenge Week 4: "Ghost in the Machine"**. 
+**GhostTerm** (or *NecroShell*) is an eerie, production-ready developer CLI assistant and process wrapper built by [@kady-x](https://github.com/kady-x) for the **Hacktoberfest DEV Challenge Week 4: "Ghost in the Machine"**. 
 
 It transforms monotonous terminal debugging and cryptic errors into an atmospheric gothic séance. Running as an interactive shell wrapper, GhostTerm inspects your executing commands, fatal stack traces, and git graveyards, channeling **Google DeepMind's open-weight Gemma 2** model (via Ollama) to whisper haunted diagnostics, post-mortem autopsies, and actionable resurrecting fixes.
 
@@ -97,7 +99,7 @@ By coupling GhostTerm with **Gemma 2 running locally via Ollama**, you achieve c
 GhostTerm requires Python 3.10+ and minimal dependencies (`rich`, `requests`):
 
 ```bash
-git clone https://github.com/your-username/GhostTerm.git
+git clone https://github.com/kady-x/GhostTerm.git
 cd GhostTerm
 pip install -r requirements.txt
 ```
@@ -115,123 +117,60 @@ ollama run gemma2:2b
 
 ---
 
-## 🎮 Usage Examples
+## 🎮 Visual Walkthrough & Demos
 
-### 1. Haunting a Command
-Wrap your build, test, or run commands with `haunt`:
+### 1. Haunting a Command (`ghost_term haunt <cmd...>`)
+Wraps any build, test, or run command with active process possession:
 
 ```bash
-# Haunt a failing Python script
 python ghost_term.py haunt python examples/cursed_script.py
-
-# Haunt your build pipeline
-python ghost_term.py haunt npm run build
-
-# Haunt standard system commands
-python ghost_term.py haunt cargo test
 ```
 
-#### Output Preview:
-```
-┌─────────────────────────── 💀 GHOSTTERMD ACTIVE ────────────────────────────┐
-│ 👁 Possessing command: python examples/cursed_script.py                      │
-│ Spirits watch the standard descriptors...                                   │
-└─────────────────────────────────────────────────────────────────────────────┘
-[*] Initiating mortal computation ritual...
-[*] Attempting to partition reality by zero...
-ZeroDivisionError: division by zero
-
-          _______
-         /  R.I.P \
-        /  EXIT 1 \
-       |-----------|
-       |  DECEASED |
-       |  PROCESS  |
-       |___________|
-
-╔══════════════════════════ ☠ POST-MORTEM AUTOPSY ☠ ══════════════════════════╗
-║ 💀 Fatal Anomaly: The singularity opens: dividing by pure nothingness       ║
-║                                                                             ║
-║ 📜 Post-Mortem Forensic:                                                    ║
-║ Mathematics collapsed when an equation attempted to partition reality by    ║
-║ zero.                                                                       ║
-║                                                                             ║
-║ 🔮 Exorcism & Resurrection:                                                 ║
-║ Add a protective talisman: `if divisor != 0:` to prevent catastrophic       ║
-║ collapse.                                                                   ║
-║                                                                             ║
-║ ✦ Channel: Gemma 2 (gemma2:2b via Ollama)                                   ║
-╚═══════════════════════ Exit Code 1 • Duration 0.60s ════════════════════════╝
-```
+![GhostTerm Process Haunting & Autopsy](assets/screenshots/haunt_autopsy.png)
 
 ---
 
-### 2. Measuring the Repository "Haunted Index"
-Audit technical debt, uncommitted phantoms, and panic commits:
+### 2. Measuring Repository "Haunted Index" (`ghost_term index`)
+Audits technical debt, uncommitted phantoms, and panic commits across the repo:
 
 ```bash
 python ghost_term.py index
 ```
 
-```
-                     Entropy & Dread Diagnostic Breakdown                      
-┌───────────────────┬─────────────────────────┬────────────┬──────────────────┐
-│ Dread Dimension   │ Observed Anomaly        │Curse Score │ Verdict          │
-├───────────────────┼─────────────────────────┼────────────┼──────────────────┤
-│ Uncommitted Souls │ 2 uncommitted file(s)   │        +6% │ Files in limbo   │
-│ Cursed Runes      │ 18 dark runes (TODO)    │       +30% │ Unkept promises  │
-│ Despair in Git    │ 4 frantic fix commits   │       +16% │ Panic history    │
-│ Necrotic Monoliths│ 1 monolithic crypt file │        +5% │ Logic catacombs  │
-└───────────────────┴─────────────────────────┴────────────┴──────────────────┘
-
-╔═══════════════════════ 🕯 SPECTRAL ASSESSMENT: 57% 🕯 ════════════════════════╗
-║ HAUNTED INDEX: 57%                                                          ║
-║ Grave Meter: [██████████████████████░░░░░░░░░░░░░░░░░░] 57/100              ║
-║ Threat Classification: FORSAKEN CEMETERY (Severe Code Degradation)          ║
-║ Prescribed Ward: Refactor monolithic scrolls immediately. Multiple          ║
-║ developers have wept into these commit messages.                            ║
-╚═════════════════════════════════════════════════════════════════════════════╝
-```
+![GhostTerm Haunted Index Audit](assets/screenshots/haunted_index.png)
 
 ---
 
-### 3. Exhuming the Git Graveyard
-Unearth late-night commits and forgotten authors:
+### 3. Exhuming the Git Graveyard (`ghost_term exhume`)
+Unearths late-night commits and forgotten authors from the git crypt:
 
 ```bash
-python ghost_term.py exhume --limit 15
+python ghost_term.py exhume --limit 10
 ```
+
+![GhostTerm Exhuming Git Graveyard](assets/screenshots/exhume_graveyard.png)
 
 ---
 
-### 4. Holding an Interactive Séance
+### 4. Interactive Séance with the Machine Spirit (`ghost_term seance`)
 Speak directly with the trapped spirit for architectural or code wisdom:
 
 ```bash
 python ghost_term.py seance
 ```
 
-```
-👻 necromancer@ghostterm ❯ Why is my segfault happening in production?
-
-┌──────────────────────────── 🕯 THE GHOST REPLIES ────────────────────────────┐
-│ Ah, memory corruption... the oldest phantom in computing. Check for          │
-│ use-after-free or buffer overruns in request deserialization. The kernel     │
-│ had no choice but to strike your process down with SIGSEGV to protect the    │
-│ mortal plane. Add memory bounds checks before passing buffers to libc.       │
-│                                                                              │
-│ ✦ Spirit: Gemma 2 (gemma2:2b via Ollama)                                     │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
+![GhostTerm Interactive Séance](assets/screenshots/seance_session.png)
 
 ---
 
-### 5. Direct Crash Log Autopsy
-Examine server logs or crash dumps without rerunning:
+### 5. Direct Crash Log Autopsy (`ghost_term autopsy <file>`)
+Examines server logs or crash dumps without rerunning:
 
 ```bash
 python ghost_term.py autopsy examples/crashed_server.log
 ```
+
+![GhostTerm File Autopsy Report](assets/screenshots/file_autopsy.png)
 
 ---
 
@@ -262,6 +201,7 @@ GhostTerm renders high-contrast, spectral themes tuned for both dark and dim ter
 
 ## 📜 License & Credits
 
+- **Author**: Mohamed ElKady ([GitHub @kady-x](https://github.com/kady-x) • [DEV @kadyx](https://dev.to/kadyx))
 - Developed for the **Hacktoberfest 2026 DEV Challenge Week 4: "Ghost in the Machine"**.
 - Powered by Google DeepMind's **Gemma 2** open-weight model family.
 - Licensed under the open and permissive [MIT License](LICENSE).

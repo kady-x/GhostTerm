@@ -2,6 +2,8 @@
 title: GhostTerm: The Haunted Terminal Companion Powered by Local Gemma 2 👻
 published: true
 tags: devchallenge, hf26challenge, gemma, ai
+cover_image: https://raw.githubusercontent.com/kady-x/GhostTerm/main/assets/screenshots/haunt_autopsy.png
+canonical_url: https://dev.to/kadyx/ghostterm-the-haunted-terminal-companion-powered-by-local-gemma-2
 ---
 
 *This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine](https://dev.to/challenges/hacktoberfest-2026-week-4).*
@@ -44,11 +46,13 @@ Instead of dry, unhelpful error dumps, GhostTerm turns developer debugging into 
 
 ## Demo
 
-Here is GhostTerm in action across common developer workflows.
+Here is GhostTerm in action across common developer workflows with actual terminal captures.
 
 ### 1. Haunting a Fatal Process (`ghost_term haunt python script.py`)
 
 When a process crashes with an unhandled exception, GhostTerm catches the exit code, displays a spectral tombstone, and delivers an immediate autopsy:
+
+![GhostTerm Process Haunting & Autopsy](https://raw.githubusercontent.com/kady-x/GhostTerm/main/assets/screenshots/haunt_autopsy.png)
 
 ```text
 ┌─────────────────────────── 💀 GHOSTTERMD ACTIVE ────────────────────────────┐
@@ -57,10 +61,6 @@ When a process crashes with an unhandled exception, GhostTerm catches the exit c
 └─────────────────────────────────────────────────────────────────────────────┘
 [*] Initiating mortal computation ritual...
 [*] Attempting to partition reality by zero...
-Traceback (most recent call last):
-  File "examples/cursed_script.py", line 10, in <module>
-    division_by_void = 1337 / 0
-                       ~~~~~^~~
 ZeroDivisionError: division by zero
 
           _______
@@ -76,14 +76,14 @@ ZeroDivisionError: division by zero
 ║                                                                             ║
 ║ 📜 Post-Mortem Forensic:                                                    ║
 ║ Mathematics collapsed when an equation attempted to partition reality by    ║
-║ zero. The runtime refused to traverse into numerical infinity.              ║
+║ zero.                                                                       ║
 ║                                                                             ║
 ║ 🔮 Exorcism & Resurrection:                                                 ║
 ║ Add a protective talisman: `if divisor != 0:` to prevent catastrophic       ║
-║ collapse before executing division.                                         ║
+║ collapse.                                                                   ║
 ║                                                                             ║
-║ ✦ Channel: Gemma 2 (gemma2:2b via Ollama)                                   ║
-╚═══════════════════════ Exit Code 1 • Duration 0.60s ════════════════════════╝
+║ ✦ Channel: Eldritch Grimoire (Offline Heuristic Engine)                     ║
+╚═══════════════════════ Exit Code 1 • Duration 0.62s ════════════════════════╝
 ```
 
 ---
@@ -91,6 +91,8 @@ ZeroDivisionError: division by zero
 ### 2. Measuring Repository Supernatural Entropy (`ghost_term index`)
 
 GhostTerm audits the repository's git health, cursed comments, and necrotic monoliths to calculate a quantitative **Haunted Index (1% - 100%)**:
+
+![GhostTerm Haunted Index Audit](https://raw.githubusercontent.com/kady-x/GhostTerm/main/assets/screenshots/haunted_index.png)
 
 ```text
 ┌─────────────────────── 🔮 SYSTEM HAUNTED INDEX AUDIT ───────────────────────┐
@@ -102,42 +104,45 @@ GhostTerm audits the repository's git health, cursed comments, and necrotic mono
 ┌───────────────────┬─────────────────────────┬────────────┬──────────────────┐
 │ Dread Dimension   │ Observed Anomaly        │Curse Score │ Verdict          │
 ├───────────────────┼─────────────────────────┼────────────┼──────────────────┤
-│ Uncommitted Souls │ 2 uncommitted file(s)   │        +6% │ Files in limbo   │
-│ Cursed Runes      │ 18 dark runes (TODO)    │       +30% │ Unkept promises  │
-│ Despair in Git    │ 4 frantic fix commits   │       +16% │ Panic history    │
+│ Uncommitted Souls │ 6 uncommitted file(s)   │       +18% │ Files in limbo   │
+│ Cursed Runes      │ 37 dark runes (TODO)    │       +30% │ Unkept promises  │
+│ Despair in Git    │ 0 frantic fix commits   │        +0% │ Tranquil history │
 │ Necrotic Monoliths│ 1 monolithic crypt file │        +5% │ Logic catacombs  │
 └───────────────────┴─────────────────────────┴────────────┴──────────────────┘
 
-╔═══════════════════════ 🕯 SPECTRAL ASSESSMENT: 57% 🕯 ════════════════════════╗
-║ HAUNTED INDEX: 57%                                                          ║
-║ Grave Meter: [██████████████████████░░░░░░░░░░░░░░░░░░] 57/100              ║
+╔═══════════════════════ 🕯 SPECTRAL ASSESSMENT: 53% 🕯 ════════════════════════╗
+║ HAUNTED INDEX: 53%                                                          ║
+║ Grave Meter: [█████████████████████░░░░░░░░░░░░░░░░░░░] 53/100              ║
 ║                                                                             ║
-║ Threat Classification: FORSAKEN CEMETERY (Severe Code Degradation)          ║
-║ Prescribed Ward: Refactor monolithic scrolls immediately. Multiple          ║
-║ developers have wept into these commit messages.                            ║
+║ Threat Classification: HAUNTED GROVE (Active Supernatural Murmurs)          ║
+║ Prescribed Ward: TODO markers and uncommitted changes are gathering         ║
+║ strength. Cleanse them before the next moon.                                ║
 ╚═════════════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-### 3. Interactive Séance with the Machine Spirit (`ghost_term seance`)
+### 3. Exhuming the Git Graveyard (`ghost_term exhume`)
+
+Unearths the history of past commits, broken branches, and witching-hour coding rituals:
+
+![GhostTerm Exhuming Git Graveyard](https://raw.githubusercontent.com/kady-x/GhostTerm/main/assets/screenshots/exhume_graveyard.png)
+
+---
+
+### 4. Interactive Séance with the Machine Spirit (`ghost_term seance`)
 
 Developers can summon the spirit to analyze architectural decisions or cryptic runtime anomalies:
 
-```text
-👻 necromancer@ghostterm ❯ Why is my segfault happening only in production?
+![GhostTerm Interactive Séance](https://raw.githubusercontent.com/kady-x/GhostTerm/main/assets/screenshots/seance_session.png)
 
-┌──────────────────────────── 🕯 THE GHOST REPLIES ────────────────────────────┐
-│ Ah, memory corruption... the oldest phantom in computing. Check for          │
-│ use-after-free or buffer overruns in your request parser. In local testing,  │
-│ memory buffers were padded; in production, concurrent high-throughput        │
-│ traffic has exposed dangling pointers. The kernel had no choice but to       │
-│ strike your process down with SIGSEGV to preserve the mortal realm. Add      │
-│ rigorous memory boundary checks or compile with AddressSanitizer (-fsanitize)│
-│                                                                              │
-│ ✦ Spirit: Gemma 2 (gemma2:2b via Ollama)                                     │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
+---
+
+### 5. Direct Crash Dump & Log Autopsy (`ghost_term autopsy <file>`)
+
+Directly parses server logs, crash dumps, or core backtraces without rerunning the failure:
+
+![GhostTerm File Autopsy Report](https://raw.githubusercontent.com/kady-x/GhostTerm/main/assets/screenshots/file_autopsy.png)
 
 ---
 
@@ -145,11 +150,11 @@ Developers can summon the spirit to analyze architectural decisions or cryptic r
 
 The complete source code is open source and available on GitHub:
 
-👉 **[GitHub: GhostTerm Repository](https://github.com/your-username/GhostTerm)** *(MIT Licensed)*
+👉 **[GitHub: kady-x/GhostTerm](https://github.com/kady-x/GhostTerm)** *(MIT Licensed)*
 
 ### Installation in 30 Seconds:
 ```bash
-git clone https://github.com/your-username/GhostTerm.git
+git clone https://github.com/kady-x/GhostTerm.git
 cd GhostTerm
 pip install -r requirements.txt
 python ghost_term.py --help
@@ -256,4 +261,5 @@ GhostTerm is built from the ground up to showcase the unique strengths of Google
 
 ---
 
+*Authored by [@kadyx](https://dev.to/kadyx) ([GitHub @kady-x](https://github.com/kady-x))*  
 *Awaken your terminal from the dead. May your builds compile, your tests pass, and your silicon spirits rest in peace.* 👻
